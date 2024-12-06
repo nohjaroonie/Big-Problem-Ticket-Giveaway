@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize Reveal Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Find the Prizes!</h1>
+    <p>Tries left: <span id="tries">3</span></p>
+
+    <div class="gif-overlay">
+        <img src="https://media.tenor.com/AW54iLJ6wEkAAAAM/basement-joe.gif" alt="Running Away Animation" />
+    </div>
+
+    <div class="grid">
+        <!-- 16 tiles -->
+        <div class="tile" onclick="revealTile(0)"></div>
+        <div class="tile" onclick="revealTile(1)"></div>
+        <div class="tile" onclick="revealTile(2)"></div>
+        <div class="tile" onclick="revealTile(3)"></div>
+        <div class="tile" onclick="revealTile(4)"></div>
+        <div class="tile" onclick="revealTile(5)"></div>
+        <div class="tile" onclick="revealTile(6)"></div>
+        <div class="tile" onclick="revealTile(7)"></div>
+        <div class="tile" onclick="revealTile(8)"></div>
+        <div class="tile" onclick="revealTile(9)"></div>
+        <div class="tile" onclick="revealTile(10)"></div>
+        <div class="tile" onclick="revealTile(11)"></div>
+        <div class="tile" onclick="revealTile(12)"></div>
+        <div class="tile" onclick="revealTile(13)"></div>
+        <div class="tile" onclick="revealTile(14)"></div>
+        <div class="tile" onclick="revealTile(15)"></div>
+    </div>
+
+    <div id="prize2-modal" class="modal">
+        <div class="modal-content">
+            <p>Close... Submit your email address to be put into the raffle for unclaimed prize tickets!</p>
+            <form id="prize2-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="prize3-modal" class="modal">
+        <div class="modal-content">
+            <p>Winner! Submit your email address to receive your free ticket!</p>
+            <form id="prize3-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
